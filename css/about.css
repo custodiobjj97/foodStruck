@@ -1,0 +1,33 @@
+.about{
+    padding: 100px 12px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.box-about{
+    box-shadow: 0px 0px 1px 0px  rgba(0, 0, 0, 0.548);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    transition: .4s; 
+}
+
+
+.box-about:hover{
+    background-color: var(--color-title);
+}
+
+.box-about .promo-img{
+    max-width: 220px;
+}
+
+@media (min-width:1042px){
+    .about{
+        grid-template-columns: repeat(5,1fr);
+    }
+}

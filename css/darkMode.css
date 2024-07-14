@@ -1,0 +1,14 @@
+
+#darkmode{
+    visibility: hidden;
+}
+
+.toggle-dark{
+    position: fixed;
+    top: 80%;
+    right: 0px;
+    background-color: var(--color-primary);
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    cursor: pointer;
+}

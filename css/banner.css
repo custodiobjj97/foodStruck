@@ -1,0 +1,47 @@
+.banner{
+    padding: 60px 12px;
+    background:url('../images/hero-bg.jpg') no-repeat center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.banner-text h2{
+  color: #fff;
+  font-size: 2.66rem;
+  margin-bottom: var(--mg-bottom);
+}
+
+.banner-text p{
+    font-size: 0.90rem;
+    margin-bottom: var(--mg-bottom);
+    color: var(--color-title);
+}
+
+
+.banner-image{
+    position: relative;
+}
+
+.banner-image .position-shape{
+    position: absolute;
+    max-width: 170px;
+    width: 100%;
+    top: 0px;
+}
+
+@media (min-width:1042px){
+    .banner{
+      grid-template-columns: repeat(2,1fr);
+    }
+
+    .banner-text p{
+        font-size: 1.1rem;
+    }
+
+    .banner-image .position-shape{
+        max-width: 300px;
+        display: block;
+    }
+}

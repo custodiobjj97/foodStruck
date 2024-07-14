@@ -1,0 +1,42 @@
+.home{
+    padding: 100px 12px;
+    background: url('../images/hero-bg.jpg') no-repeat center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+
+.home-text > h1, .home-text > p{
+    color: var(--color-title);
+}
+
+.home-text h1{
+   font-size: 2.66rem;
+   margin-bottom: var(--mg-bottom);
+}
+
+.home-text p{
+    font-size: 0.96rem;
+    margin-bottom: var(--mg-bottom);
+}
+
+@media (min-width:1042px){
+    .home{
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .home-text h1{
+        font-size: 3.44rem;
+        margin-bottom: var(--mg-bottom);
+    }
+
+    .home-text p{
+        font-size: 1.45rem;
+        margin-bottom: var(--mg-bottom);
+    }
+
+}
